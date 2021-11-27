@@ -1,6 +1,6 @@
 settings:
   title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  url: 'https://status.lysto.app' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -15,25 +15,121 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
+  - id : mesadeayuda.lysto.app
+    name: Mesa de Ayuda
+    url: https://mesadeayuda.lysto.app/#login
+    method: GET 
+    expectStatus: 200 
+    linkable: false
 
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
-    method: GET
-    expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
+  - id : proxy.mydot.app
+    name: Dots Proxy
+    url: https://proxy.mydot.app
+    method: GET 
+    expectStatus: 200 
+    linkable: false
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
-    method: GET
-    expectStatus: 200
+  - id : doc.mydot.app
+    name: API Documentation
+    url: https://doc.mydot.app
+    method: GET 
+    expectStatus: 200 
+    linkable: false
+
+  - id : dashboard.mydot.app
+    name: Dashboard
+    url: https://dashboard.mydot.app
+    method: GET 
+    expectStatus: 200 
+    linkable: false
+
+  - id : devdashboard.mydot.app
+    name: Dev Dashboard
+    url: https://devdashboard.mydot.app
+    method: GET 
+    expectStatus: 200 
+    linkable: false
+
+  - id : phpma.mydot.app
+    name: PHPMyAdmin
+    url: https://phpma.mydot.app
+    method: GET 
+    expectStatus: 200 
+    linkable: false
+
+  - id : assets.mydot.app
+    name: Firebase Bucket Mydot
+    url: https://assets.mydot.app
+    method: GET 
+    expectStatus: 200 
+    linkable: false
+
+  - id : assets.lysto.app
+    name: Firebase Bucket Lysto
+    url: https://assets.lysto.app
+    method: GET 
+    expectStatus: 200 
+    linkable: false
+
+  - id : cdn.mydot.app
+    name: CDN - Cloudflare Pages
+    url: https://cdn.mydot.app/contact
+    method: GET 
+    expectStatus: 200 
+    linkable: false
+
+  - id : login.lysto.cl
+    name: KeyCloak
+    url: https://login.lysto.cl/auth/realms/master
+    method: GET 
+    expectStatus: 200 
+    linkable: false
+
+  - id : static.mydot.app
+    name: Static at Netlify
+    url: https://static.mydot.app/contact.html
+    method: GET 
+    expectStatus: 200 
+    linkable: false
+
+  - id : api-dev.mydot
+    name: Development API 
+    url: https://api-dev.mydot.app
+    method: GET 
+    expectStatus: 200 
+    linkable: false
+
+  - id : staging.mydot.app
+    name: Staging API
+    url: https://staging.mydot.app
+    method: GET 
+    expectStatus: 200 
+    linkable: false
+
+  - id : prod.lysto.cl
+    name: Prod Lysto
+    url: https://prod.lysto.cl
+    method: GET 
+    expectStatus: 200 
+    linkable: false
+
+  - id : beta.lysto.app
+    name: Lysto, Beta Environment
+    url: https://beta.lysto.app
+    method: GET 
+    expectStatus: 200 
+    linkable: false
+
+  - id : prodassets.lysto.app
+    name: Prod Assets
+    url: https://prodassets.lysto.app/g2eynbwmz5r8wivwwzfjagzvo9qh
+    method: GET 
+    expectStatus: 200 
+    linkable: false
+
+
+
+
+
+
+
