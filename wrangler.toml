@@ -1,5 +1,6 @@
 name = "cf-workers-status-page"
-workers_dev = true
+workers_dev = false
+route = "status.mydot.app"
 account_id = "585feca7df01ec32254a2b422252cdb1"
 type = "webpack"
 webpack_config = "node_modules/flareact/webpack"
@@ -17,3 +18,7 @@ entry-point = "./"
 #kv-namespaces = [{binding="KV_STATUS_PAGE", id="xxxx", preview_id=""}]
 #zone_id="xxx"
 #route="xxx"
+
+
+
+zone_id = "1b2d64cd41fc3cb07e6b2f76fb7a7e38"
